@@ -1,2 +1,2 @@
 # Character Generator
-A character generator made wit HTML, JS and TailwindCSS
+A character generator made with HTML, JS and TailwindCSS
