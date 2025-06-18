@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Generated Characters </title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-black">
+    <div class="justify-center flex m-3 items-center flex-col">
+        <h1 class="text-4xl ">Randomly Generated Characters </h1>
+        <button onclick="Spin()">
+            <div class="border-black border rounded-md px-6 py-2 my-8">SPIN</div>
+        </button>
+        <div
+            class="bg-gray-200 border-black border max-w-11/12 w-5xl p-5  mt-1 rounded-md grid grid-cols-4 grid-rows-4">
+            <div class="bg-1 p-4  m-2 grid col-span-3  rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(0)">
+                <h3 class="text-2xl"><b>Name: </b>
+                    <label id="name"> John Johnson</label>
+                </h3>
+
+            </div>
+            <div id="1"
+                class="bg-2 p-4  m-2 grid col-span-1 rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(1)">
+                <h3 class="text-2xl"><b>Age: </b>
+                    <label id="age">72</label>
+                </h3>
+
+            </div>
+            <div class="bg-3 p-4  m-2 grid col-span-2  rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(2)">
+                <h3 class="text-2xl"><b>Profession: </b>
+                    <label id="profession">Blacksmith</label>
+                </h3>
+
+            </div>
+            <div class="bg-2 p-4  m-2 grid col-span-2 rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(3)">
+                <h3 class="text-2xl"><b>Favorite Food:</b>
+                    <label id="favorite_food">Strawberries</label>
+                </h3>
+
+            </div>
+            <div class=" bg-1 p-4  m-2 grid col-span-3  rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(4)">
+                <h3 class="text-2xl"><b>Favorite Childhood Memory: </b>
+                    <label id="favorite_memory"> Doing crosswords
+                        with mom</label>
+                </h3>
+
+            </div>
+            <div class=" bg-2 p-4 m-2  col-span-1  rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(5)">
+                <h3 class="text-2xl"><b>Height: </b>
+                    <label id="height">171 cm</label>
+                </h3>
+
+            </div>
+            <div class=" bg-3 p-4 m-2  col-span-4 rounded-sm hover:p-5 hover:m-1 active:p-6 active:m-0 transition-all border-2 border-transparent"
+                onclick="LockGenerator(6)">
+                <h3 class="text-2xl"><b>Item you always have with you: </b>
+                    <label id="daily_item">A flipper zero</label>
+                </h3>
+            </div>
+        </div>
+        <p class="m-4">Click on an attribute to lock it in</p>
+    </div>
+</body>
+<script src="src/utils.js"></script>
+
+<script src="src/generators.js"></script>
+
+<script src="src/script.js"></script>
+
+</html>
