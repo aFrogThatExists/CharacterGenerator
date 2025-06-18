@@ -1,2 +1,5 @@
 # Character Generator
-A character generator made with HTML, JS and TailwindCSS
+A small character generator made with HTML, JS and TailwindCSS
+
+## Demo 
+A demo exists at https://afrogthatexists.github.io/CharacterGenerator/
