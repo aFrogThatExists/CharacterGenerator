@@ -3,7 +3,7 @@ changeable.fill(true)
 
 function LockGenerator(index) {
     changeable[index] = !changeable[index]
-    if (changeable === true) {
+    if (changeable[index] === true) {
         document.getElementById(ids[index]).parentElement.parentElement.className =
             document.getElementById(ids[index]).parentElement.parentElement.className.replaceAll("border-black", "border-transparent")
     } else {
